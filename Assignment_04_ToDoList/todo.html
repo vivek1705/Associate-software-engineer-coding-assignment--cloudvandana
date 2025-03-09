@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="todo.css" />
+</head>
+<body>
+  <div id="todo-container">
+    <!-- Fixed Input Section -->
+    <div class="input-section">
+      <h2>To-Do List</h2>
+      <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Enter a task" />
+        <button id="addBtn">Add Task</button>
+      </div>
+    </div>
+    <!-- Scrollable Task Container -->
+    <div class="task-container">
+      <ul id="taskList"></ul>
+    </div>
+  </div>
+  
+  <!-- Link to external JavaScript file -->
+  <script src="todo.js"></script>
+</body>
+</html>

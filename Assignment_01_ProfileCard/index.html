@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivek Patil Profile-Card</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/7433d3320f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Profile Card Container  -->
+    <div class="container">
+      <div class="profile-card">
+        <img id="coverPic" class="cover-pic" />
+        
+        <div class="profile-header">
+          <img id="profilePic" class="profile-pic" />
+      
+          <!-- Heading Text -->
+          <div class="profile-info">
+            <h1 id="name"></h1>
+            <p class="typewriter" id="roles"></p>
+            <p class="description" id="description"></p> 
+          </div>
+        </div>
+        
+        <!-- Buttons Section -->
+        <div class="button-container">
+          <a href="#" class="view-btn" target="_blank" id="view-profile">
+            <i class="fas fa-link"></i> Profile
+          </a>
+          
+          <a href="#" class="view-btn" target="_blank" id="view-cv">
+            <i class="fas fa-file-alt"></i> Resume
+          </a>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="contact-info">
+          <!-- Location -->
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span id="location"></span> <!-- Location Text -->
+          </div>
+
+          <!-- Phone and Email in a single line -->
+          <div class="phone-email">
+            <div class="phone">
+              <i class="fas fa-mobile-alt"></i>
+              <span id="phone"></span> <!-- Phone Number -->
+            </div>
+            <div class="email">
+              <i class="fas fa-envelope"></i>
+              <span id="email"></span> <!-- Email Address -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links - Positioned at the bottom -->
+        <div class="social-links">
+          <a href="#" id="linkedin" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          <a href="#" id="twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" id="github" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="#" id="telegram" class="social-icon"><i class="fab fa-telegram"></i></a>
+          <a href="#" id="instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" id="whatsapp" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>

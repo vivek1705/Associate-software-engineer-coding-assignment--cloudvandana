@@ -1,0 +1,114 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f4f4f4, #ddd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Main Container */
+  #todo-container {
+    width: 350px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh; /* Limits height so task list becomes scrollable */
+  }
+  
+  /* Fixed Input Section */
+  .input-section {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 10;
+    padding: 20px 20px 10px; /* Extra bottom padding for separation */
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .input-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Input Group Styling */
+  .input-group {
+    display: flex;
+  }
+  
+  #taskInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  #addBtn {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #addBtn:hover {
+    background: #0056b3;
+  }
+  
+  /* Scrollable Task Container */
+  .task-container {
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  /* Task List Styles */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    background: #e2e2e2;
+    margin: 8px 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+    transition: background 0.3s ease;
+  }
+  
+  /* Completed Task Style */
+  li.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+  
+  li:hover {
+    background: #d0d0d0;
+  }
+  
+  /* Task Text Styling */
+  .task-text {
+    flex: 1;
+    cursor: pointer;
+  }
+  
+  /* Remove Button Styling */
+  .remove-btn {
+    background: #ff4d4d;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  

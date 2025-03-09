@@ -1,0 +1,266 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  height: 100%;
+  /* background:url("./images/coding-background.jpg");
+  background-repeat: no-repeat;
+  background-size:cover; */
+  background: linear-gradient(120deg, #000000, #251994);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative; 
+}
+
+/* Profile Card */
+.profile-card {
+  width: 100%;
+  max-width: 420px;
+  background: whitesmoke;
+  color: #000000;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  position: relative; 
+}
+
+/* Cover Picture */
+.cover-pic {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Profile Header */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -50px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 2);
+  transition: all 0.3s ease;
+}
+
+.profile-pic:hover {
+  box-shadow: 0 0 0 5px #4b6cb7;
+}
+
+.profile-info {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.profile-info h1 {
+  font-size: 28px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.typewriter {
+  font-size: 20px;
+  font-weight: bold;
+  color: #880000;
+  height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 5px;
+}
+
+.description {
+  font-size: 16px;
+  color: #323a41;
+  line-height: 1.6;
+  max-height: none;  
+  overflow: visible; 
+  text-overflow: unset; 
+  display: block; 
+}
+
+
+/* Button Styling */
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.view-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5579ce;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 30px;
+  width: 40%;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #2c4377;
+}
+
+.view-btn i {
+  margin-right: 10px;
+}
+
+/* Contact Information Section */
+.contact-info {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.location,
+.phone-email {
+  margin: 5px 0;
+}
+
+.location i,
+.phone-email i {
+  font-size: 15px;
+  color: #4b6cb7;
+  margin-right: 2px;
+}
+
+.location span,
+.phone-email span {
+  font-size: 15px;
+  color: #333;
+}
+
+.phone-email {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.phone-email .phone,
+.phone-email .email {
+  display: flex;
+  align-items: center;
+}
+
+.phone-email .phone i,
+.phone-email .email i {
+  font-size: 15px;
+  color: #4b6cb7;
+}
+
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center; 
+  gap: 10px; 
+  margin-top: 5px; 
+  width: 100%; 
+}
+
+.social-icon {
+  font-size: 20px;
+  color: #ff0808;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #4b6cb7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-card {
+    padding: 15px;
+  }
+
+  .view-btn {
+    width: 48%;
+  }
+
+  .view-btn i {
+    margin-right: 10px;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .profile-header {
+    margin-top: -30px;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-info h1 {
+    font-size: 22px;
+  }
+
+  .typewriter {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .view-btn {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .view-btn i {
+    margin-right: 10px;
+  }
+
+  .contact-info {
+    font-size: 10px;
+  }
+
+  .social-icon {
+    font-size: 18px;
+  }
+
+  .social-links {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
