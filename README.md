@@ -48,8 +48,8 @@ This repository contains my solutions for the Associate Software Engineer assign
   - Remove tasks via a button
 
 - **Files:**  
-  - `Assignment_04_ToDoList/todo.html` (along with external CSS/JS if applicable)
-
+  - `Assignment_04_ToDoList/todo.html`
+    
 ### 5. DOM Manipulation - Image Slider
 - **Description:**  
   Create an image slider using JavaScript that:
@@ -58,7 +58,7 @@ This repository contains my solutions for the Associate Software Engineer assign
   - Uses an array of image URLs (images are loaded from the internet and are responsive)
 
 - **Files:**  
-  - `Assignment_05_ImageSlider/image-slider.html` (along with external CSS/JS if applicable)
+  - `Assignment_05_ImageSlider/image-slider.html` 
 
 ## Repository Structure
 
@@ -72,10 +72,6 @@ The repository is organized into separate folders for each assignment:
 
 - **Java Assignments:**  
   Compile and run the Java files using your preferred Java compiler or IDE.
-
-## Contact
-
-For any questions regarding this assignment, please contact [careers@cloudvandana.com](mailto:careers@cloudvandana.com).
 
 ---
 
